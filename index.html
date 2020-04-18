@@ -4,7 +4,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
-  $("p").click(function(){
+  $("#pbutton").click(function(){
     $(this).hide();
   });
 });
@@ -12,11 +12,9 @@ $(document).ready(function(){
 </head>
 <body>
 <h1>Welcome to InFormPath</h1>
-<p>The one-stop place for Apps.</p>
+<p>A LiveNexus Technologies service. Click <a href='https://www.livenexus.com'>here</a> to learn more about how you can create your own Apps and run them all from here.</p>
 
-<p>If you click on me, I will disappear.</p>
-<p>Click me away!</p>
-<p>Click me too!</p>
+<p id="pbutton">If you click on me, I will disappear.</p>
 
 <form action="javascript:alert('hello ' + $('#firstname').val() );">
   <label for="firstname">Enter your First Name:</label><br><br>
