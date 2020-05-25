@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#pbutton").click(function(){
+    $(this).hide();
+  });
+});
+</script>
+</head>
+<body>
+<h1>Welcome to InFormPath</h1>
+<p>An LNT service. Click <a href='https://www.livenexus.com'>here</a> to learn more about how you can create your own Apps and run them all from here.</p>
+
+<p id="pbutton">If you click on me, I will disappear.</p>
+
+<form action="javascript:alert('hello ' + $('#firstname').val() );">
+  <label for="firstname">Enter your First Name:</label>
+  <input type="text" id="firstname" name="firstname" placeholder="John"><br><br>
+  
+  <label for="phone">Enter a phone number:</label>
+  <input type="tel" id="phone" name="phone" placeholder="123-45-678"
+  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+  <small>Format: 123-45-678</small><br><br>
+  
+  
+  <label for="mainpic">Select Picture to upload:</label>
+  <input id="mainpic" type="file" accept="image/*" capture>&nbsp;&nbsp;
+  <input type="submit">
+</form>  
+
+<br><br>
+<input type="button" value="HR Apps">&nbsp;&nbsp;
+<input type="button" value="Finance Apps">&nbsp;&nbsp;
+<input type="button" value="IT/IS Apps">&nbsp;&nbsp;
+<input type="button" value="Personal Apps">
+
+</body>
+</html>
